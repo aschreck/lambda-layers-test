@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const app = express();
+const sls = require('serverless-http');
 const port = 3000;
 
 const configHandler = (req, res) => {
@@ -23,4 +24,5 @@ const configHandler = (req, res) => {
 
 app.get('/config', configHandler);
 
-app.listen(port, () => console.log(`Lambda test app listening on port ${port}!`))
+module.exports.server = sls(app);
+// app.listen(port, () => console.log(`Lambda test app listening on port ${port}!`))
