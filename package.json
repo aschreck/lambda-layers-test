@@ -1,0 +1,23 @@
+{
+  "name": "lambda-layers-test",
+  "version": "1.0.0",
+  "description": "A sample app that will make use of lambda layers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aschreck/lambda-layers-test.git"
+  },
+  "author": "Aaron Schreck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aschreck/lambda-layers-test/issues"
+  },
+  "homepage": "https://github.com/aschreck/lambda-layers-test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
